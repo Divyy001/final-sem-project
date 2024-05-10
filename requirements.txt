@@ -5,3 +5,4 @@ pillow
 protobuf
 keras
 dill
+streamlit_copper
