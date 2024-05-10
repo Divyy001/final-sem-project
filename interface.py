@@ -1,22 +1,10 @@
-import os
 import streamlit as st
 import numpy as np
 from PIL import Image
 from tensorflow.keras.models import load_model
 
-# Get the current directory
-current_directory = os.path.dirname(__file__)
 
-# Model file path
-model_file = os.path.join(current_directory, "model2Vgg16added.keras")
-
-# Check if the model file exists
-if not os.path.isfile(model_file):
-    st.error("Model file not found. Please check the file path.")
-    st.stop()
-
-# Load the model
-model = load_model(model_file)
+model = load_model("model2Vgg16added.keras")
 
 # Define class labels
 class_labels = ['Seborrheic Keratoses and other Benign Tumors', 'Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions',
