@@ -4,7 +4,7 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 
 
-model = load_model("model2Vgg16added.keras")
+model = load_model("/mount/src/final-sem-project/model2Vgg16added.keras")
 
 # Define class labels
 class_labels = ['Seborrheic Keratoses and other Benign Tumors', 'Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions',
