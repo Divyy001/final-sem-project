@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 
 
-model = load_model("model16.keras")
+model = tf.keras.models.load_model("model16.keras")
 
 # Define class labels
 class_labels = ['Seborrheic Keratoses and other Benign Tumors', 'Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions',
