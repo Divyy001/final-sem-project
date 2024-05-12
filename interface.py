@@ -34,7 +34,7 @@ def main():
 
         try:
             # Load the model
-            model = load_model("model.keras")
+            model = load_model("model16.keras")
         except Exception as e:
             st.error(f"Error loading model: {e}")
             return
